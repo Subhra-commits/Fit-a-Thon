@@ -33,10 +33,10 @@
         <input type="text" name =  "uname" required/>
         <label for="uname"><b>Username</b></label>
 
-        <input type="password" name =  "pwd" required/>
+        <input type="password" name =  "pwd" pattern = "[A-Za-z\d#$@!%&*?]{8,20}" required/>
         <label for="pwd"><b>Password</b></label>
         <br>
-        <button type = "submit" class="loginBtn">Login</button>
+        <button type = "submit" class="loginBtn"><strong>Login</strong></button>
         <label>
           <input type="checkbox" name = "remember"> Remember Me
         </label>        
