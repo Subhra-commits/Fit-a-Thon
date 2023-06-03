@@ -24,27 +24,30 @@
     <div class="wrapper"></div>
     <div class="form-wrapper sign-in"></div>
     <div class="row">
-    <form action="">
+    <form onsubmit="validate();" action="registration.html">
       <h2>Team Login</h2>
       <div class="imgContainer">
         <img src="login-avatar.png" alt="Login Avatar" class="avatar">
       </div>
       <div class="form-group">
-        <input type="text" name =  "uname" required/>
+        <input type="text" id = "uname" name =  "uname" required/>
         <label for="uname"><b>Username</b></label>
 
-        <input type="password" name =  "pwd" pattern = "[A-Za-z\d#$@!%&*?]{8,20}" required/>
+        <input type="password" id = "pwd" name =  "pwd" pattern = "^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" 
+        oninvalid="setCustomValidity('Password should be of 8 length.\n 1. At least one upper case letter \n 2. At least one lower case letter \n 3. At least one digit \n 4. At least one special character(@,$,!,%,*,#,!,&)')" 
+        required aria-invalid="true"/>
         <label for="pwd"><b>Password</b></label>
+        <span id = "frgtPwd"><a href="forgetPwd.html">Forgot Password?</a></span>
         <br>
-        <button type = "submit" class="loginBtn"><strong>Login</strong></button>
+        <button type = "submit" class="loginBtn" onclick="return validate();"><strong>Log in</strong></button>
+         
         <label>
           <input type="checkbox" name = "remember"> Remember Me
         </label>        
       </div> <!-- End of form-group -->
       <div class="container">
-        <button type="button" class="cnclBtn">Cancel</button>
-        <span class = "register">Didn't register yet? <a href="registration.html">Register</a></span>
-        <span class = "frgtPwd"><a href="forgetPwd.html">Forget Password?</a></span>        
+       <!-- <button type="reset" class="cnclBtn">Reset</button> -->
+        <span class = "register">Don't have an account? <a href="registration.html">Register</a></span>     
       </div> <!-- End of Container -->
     </form>
   </div>

@@ -1,74 +1,96 @@
-<div class="wrapper-Registration">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="registration.css" />
+  <title>Registration</title>
+</head>
+<body>
+  <nav id="header-nav" class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="index.html" class="pull-left visible-md visible-lg">
+          <div id="logo-img" alt="Logo image"></div>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div class="wrapper-Registration">
+    <h1>Registration</h1>
     <form action="">
       <div class="input-group1">
-        <h2>Registration</h2>
         <div>
-          <input type="text" placeholder="Team Name" />
           <label for="">Team Name</label>,
+          <input type="text" placeholder=" Enter Team Name" />
         </div>
         <br />
-        <p>Team Member name should be in: (Surname_Name )format</p>
+        <p
+          style="
+            color: rgb(252, 251, 251);
+            font-size: large;
+            margin-block: 2px;
+            font-weight: 800;
+          "
+        >
+          Team Member name should be in: (Surname_Name )format
+        </p>
+        <br />
         <div>
-          <input type="text" placeholder="Team Member 1" />
           <label for="">Team Member 1</label>
+          <input type="text" placeholder="Enter Name" />
           <input type="number" placeholder="Emp id" />
           <label for=""></label>
         </div>
+        <br />
         <div>
-          <input type="text" placeholder="Team Member 2" />
           <label for="">Team Member 2</label>
+          <input type="text" placeholder="Enter Name" />
           <input type="number" placeholder="Emp id" />
           <label for=""></label>
         </div>
+        <br />
         <div>
-          <input type="text" placeholder="Team Member 3" />
           <label for="">Team Member 3</label>
+          <input type="text" placeholder="Enter Name" />
           <input type="number" placeholder="Emp id" />
           <label for=""></label>
         </div>
+        <br />
         <div>
           <label for="">Team Member 4</label>
-          <input type="text" placeholder="Team Member 4" />
-          
-          <input type="number" placeholder="Emp id" />
-          <label for=""></label>
-        </div>
-        <div>
-          <input type="text" placeholder="Team Member 5" />
-          <label for="">Team Member 5</label>
-          <input type="number" placeholder="Emp id" />
-          <label for=""></label>
-        </div>
-        <div>
-          <input type="text" placeholder="Team Member 6" />
-
-          <label for="">Team Member 6</label>
+          <input type="text" placeholder="Enter Name" />
           <input type="number" placeholder="Emp id" />
           <label for=""></label>
         </div>
         <br />
         <div>
-          <input type="text" placeholder="Username" required/>
+          <label for="">Team Member 5</label>
+          <input type="text" placeholder="Enter Name" />
+          <input type="number" placeholder="Emp id" />
+          <label for=""></label>
+        </div>
+        <br />
+        <div>
+          <label for="">Team Member 6</label>
+          <input type="text" placeholder="Enter Name" />
+          <input type="number" placeholder="Emp id" />
+          <label for=""></label>
+        </div>
+        <br />
+        <div>
           <label for="">Username</label>
+          <input type="text" placeholder="Username" required />
         </div>
+        <br />
         <div>
-          <input
-            type="password"
-            placeholder="password"
-            required
-          />
           <label for="">Password</label>
-        </div>
-        <div>
-          <input
-            type="password"
-            placeholder="Confirm password"
-            required
-          />
+          <input type="password" placeholder="password" required />
           <label for="">Confirm Password</label>
+          <input type="password" placeholder="Confirm password" required />
         </div>
+
         <button type="submit" class="btn-regi">Register</button>
       </div>
-      <div><p>UserName will be Name & Password :</p></div>
     </form>
   </div>
+  <script src="script1.js"></script>
+</body>
