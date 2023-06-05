@@ -17,14 +17,14 @@
       </div>
     </nav>
     <div class="wrapper-Registration">
-      <h1>Registration</h1>
+      <h2>Enter Member Details</h2>
       <form action="">
         <div class="input-group1">
-          <div>
+          <!-- <div>
             <label for="">Team Name</label>,
             <input type="text" placeholder=" Enter Team Name" />
           </div>
-          <br />
+          <br /> -->
           <p
             style="
               color: rgb(252, 251, 251);
@@ -36,24 +36,24 @@
             Team Member name should be in: (Surname_Name )format
           </p>
           <br />
-          <div class="col-md-6">
+          <div>
             <label for="">Team Member 1</label>
-            <input type="text" placeholder="Enter Name" />
-            <input type="number" placeholder="Emp id" />
+            <input type="text" placeholder="Enter Name" required/>
+            <input type="number" placeholder="Emp id" pattern="(\d{5,})" required/>
             <label for=""></label>
           </div>
           <br />
-          <div class="col-md-6">
+          <div>
             <label for="">Team Member 2</label>
-            <input type="text" placeholder="Enter Name" />
-            <input type="number" placeholder="Emp id" />
+            <input type="text" placeholder="Enter Name" required/>
+            <input type="number" placeholder="Emp id" required/>
             <label for=""></label>
           </div>
           <br />
           <div>
             <label for="">Team Member 3</label>
-            <input type="text" placeholder="Enter Name" />
-            <input type="number" placeholder="Emp id" />
+            <input type="text" placeholder="Enter Name" required/>
+            <input type="number" placeholder="Emp id" required/>
             <label for=""></label>
           </div>
           <br />
@@ -78,7 +78,7 @@
             <label for=""></label>
           </div>
           <br />
-          <div>
+          <!--<div>
             <label for="">Username</label>
             <input type="text" placeholder="Username" required />
           </div>
@@ -88,7 +88,7 @@
             <input type="password" placeholder="password" required />
             <label for="">Confirm Password</label>
             <input type="password" placeholder="Confirm password" required />
-          </div>
+          </div> -->
   
           <button type="submit" class="btn-regi">Register</button>
         </div>
